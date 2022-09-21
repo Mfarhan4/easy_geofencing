@@ -112,6 +112,7 @@ class EasyGeofencing {
   static stopGeofenceService() {
     if (_positionStream != null) {
       _positionStream!.cancel();
+      _positionStream = null;
     }
   }
 
